@@ -1,0 +1,91 @@
+<section>
+  <article>
+    <h3>Interpolation / Interpolação</h3>
+    <p>String renderizada com Interpolation {{ nome }}</p>
+    <p>Resultado de 1 + 1 é {{ 1 + 1}}</p>
+    <p>Resultado de 1 + 1 não é {{1 + 1 + getValor()}}</p>
+  </article>
+
+  <!--<article>
+    <h3>Property Binding</h3>
+    <img src="{{ imagem }}" alt="esportes">
+    <img [src]="imagem" alt="">
+    <img bind-src="imagem" alt="">
+  </article>-->
+
+  <article>
+    <h3>Class e Stype Binding</h3>
+    <div>
+      Selecione uma classe:
+      <select #classe (change)="0">
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-info">Info</option>
+        <option value="alert-warning">Warning</option>
+        <option value="alert-danger">Erro</option>
+      </select>
+      <br>
+      <br>
+
+      <div class="alert {{classe.value}}" role="alert">
+        Texto colorido conforme valor do combobox.
+      </div>
+
+      <div class="alert" role="alert" [class.alert-success]="classe.value=='alert-success'">
+        Sucesso
+      </div>
+      <div class="alert alert-info" role="alert" [class.alert-info]="classe.value=='alert-info'">
+        Informação
+      </div>
+      <div class="alert alert-warning" role="alert" [class.alert-warning]="classe.value=='alert-warning'">
+        Aguardando
+      </div>
+      <div class="alert alert-danger" role="alert" [class.alert-danger]="classe.value=='alert-danger'">
+        Erro
+      </div>
+
+    </div>
+  </article>
+</section>
+
+<section>
+  <article>
+    <h3>Event Binding</h3>
+
+    <div class="row">
+      <a class="waves-effect waves-light btn" (click)="onClick()">Me clique!</a>
+      <br>
+      <br>
+      <div class="input-field col s6">
+        <input placeholder="Placeholder" id="testOnKeyup" type="text" class="validate" (keyup)="onKeyup($event)" value="">
+        <label for="testOnKeyup">Teste evento keyup</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input placeholder="Placeholder" id="testEnter" type="text" class="validate" (keyup.enter)="onEnter(campo.value)" #campo>
+        <label for="testEnter">Teste evento Enter</label>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <span class="card-panel teal lighten-2" (mouseover)="onMouseSpan()" (mouseout)="onMouseSpan()">
+        Passe o mouse sobre mim! {{ isMouseOver }}
+      </span>
+  </article>
+</section>
+<br>
+<section class="card-panel">
+  <article>
+    <h3>Two-way data Binding</h3>
+    <div>
+      <div class="input-field col s6">
+        <input placeholder="Digite-me" id="two-way" type="text" class="validate" [(ngModel)]="nome">
+        <label for="two-way">Digite algo</label>
+      </div>
+      <span class="blue-text text-darken-2">
+      <p>Você digitou => {{nome}}</p>
+    </span>
+    </div>
+  </article>
+</section>

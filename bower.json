@@ -1,0 +1,20 @@
+{
+  "name": "exemplos-angular2",
+  "description": "",
+  "main": "",
+  "authors": [
+    "dariano <darianosoares@hotmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Dariano/exempos-angular2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.98.0"
+  }
+}

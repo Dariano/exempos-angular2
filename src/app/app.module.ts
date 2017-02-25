@@ -9,12 +9,14 @@ import { ComponenteCriadoPeloNgComponent } from './componente-criado-pelo-ng/com
 import { CursosComponent } from './cursos/cursos.component';
 
 import { CursosModule } from './cursos/cursos.module';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MeuPrimeiroComponent,
-    ComponenteCriadoPeloNgComponent
+    ComponenteCriadoPeloNgComponent,
+    PropertyBindingComponent
   ],
   imports: [
     BrowserModule,
