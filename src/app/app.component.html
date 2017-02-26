@@ -1,8 +1,19 @@
 <h1>
   {{title}}
 </h1>
-<meu-primeiro-component></meu-primeiro-component>
+<!--<meu-primeiro-component></meu-primeiro-component>-->
 
-<componente-criado-pelo-ng></componente-criado-pelo-ng>
+<!--<componente-criado-pelo-ng></componente-criado-pelo-ng>-->
 
-<app-property-binding></app-property-binding>
+<!--<app-property-binding></app-property-binding>-->
+<!--<app-property-binding></app-property-binding>-->
+<app-life-cycle [valor]="valorInicial" *ngIf="deletarConteudo != true"></app-life-cycle>
+
+<a class="btn-floating btn-large waves-effect waves-light green" 
+  (click)="incrementar()" >
+  <i class="material-icons">add</i>
+</a>
+
+<a class="btn-floating btn-large waves-effect waves-light red" (click)="deletarConteudo = true">
+  <i class="material-icon">-</i>
+</a>

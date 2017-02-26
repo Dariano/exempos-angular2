@@ -11,12 +11,17 @@ import { CursosComponent } from './cursos/cursos.component';
 import { CursosModule } from './cursos/cursos.module';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 
+import { HighlightDirective } from './property-binding/input-property.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     MeuPrimeiroComponent,
     ComponenteCriadoPeloNgComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    HighlightDirective,
+    LifeCycleComponent
   ],
   imports: [
     BrowserModule,

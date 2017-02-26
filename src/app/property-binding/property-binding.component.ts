@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Directive } from '@angular/core';
 
 @Component({
   selector: 'app-property-binding',
@@ -22,7 +22,7 @@ export class PropertyBindingComponent implements OnInit {
     alert('Botão clicado!');
   }
 
-  onKeyup(event:KeyboardEvent) {
+  onKeyup(event) {
     console.log(event);
     
   }

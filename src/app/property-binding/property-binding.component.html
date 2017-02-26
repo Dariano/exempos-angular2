@@ -1,4 +1,4 @@
-<section>
+<!--<section>
   <article>
     <h3>Interpolation / Interpolação</h3>
     <p>String renderizada com Interpolation {{ nome }}</p>
@@ -6,12 +6,12 @@
     <p>Resultado de 1 + 1 não é {{1 + 1 + getValor()}}</p>
   </article>
 
-  <!--<article>
+  <article>
     <h3>Property Binding</h3>
     <img src="{{ imagem }}" alt="esportes">
     <img [src]="imagem" alt="">
     <img bind-src="imagem" alt="">
-  </article>-->
+  </article>
 
   <article>
     <h3>Class e Stype Binding</h3>
@@ -87,5 +87,13 @@
       <p>Você digitou => {{nome}}</p>
     </span>
     </div>
+  </article>
+</section>-->
+
+<section>
+  <article>
+    <p myHighlight>Highlight me!</p>
+    <p myHighlight highlightColor="yellow">Highlighted in yellow</p>
+    <p myHighlight [highlightColor]="'orange'">Highlighted in orange</p>
   </article>
 </section>
