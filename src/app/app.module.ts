@@ -12,10 +12,10 @@ import { CursosComponent } from './cursos/cursos.component';
 import { CursosModule } from './cursos/cursos.module';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 
-import { HighlightDirective } from './property-binding/input-property.component';
-
 import { MaterializeModule } from 'angular2-materialize';
 import "angular2-materialize";
+import { DiretivaCustomizadaDirective } from './diretivas/diretiva-customizada.directive';
+import { NgElseDirective } from './diretivas/ng-else.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import "angular2-materialize";
     MeuPrimeiroComponent,
     ComponenteCriadoPeloNgComponent,
     PropertyBindingComponent,
-    HighlightDirective
+    DiretivaCustomizadaDirective,
+    NgElseDirective
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,11 @@
 import { Directive, ElementRef, HostListener, Input, Renderer, HostBinding } from '@angular/core';
 
 @Directive({
-    selector: '[myHighlight]'
+  selector: '[diretivaCustomizada]'
 })
-export class HighlightDirective {
+export class DiretivaCustomizadaDirective {
 
-    constructor(private el: ElementRef, private _renderer: Renderer) {}
+  constructor(private el: ElementRef, private _renderer: Renderer) {}
 
     @Input() 
     highlightColor: string;
@@ -34,4 +34,5 @@ export class HighlightDirective {
 
         this.backgroundColor = color;
     }
+
 }

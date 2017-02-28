@@ -96,9 +96,9 @@
 <section>
   <article>
     <h3>Eventos</h3>
-    <p myHighlight>Highlight me!</p>
-    <p myHighlight highlightColor="yellow">Highlighted in yellow</p>
-    <p myHighlight [highlightColor]="'orange'">Highlighted in orange</p>
+    <p diretivaCustomizada>Highlight me!</p>
+    <p diretivaCustomizada highlightColor="yellow">Highlighted in yellow</p>
+    <p diretivaCustomizada [highlightColor]="'orange'">Highlighted in orange</p>
   </article>
 </section>
 
@@ -112,5 +112,23 @@
 
       <div [hidden]="!like">Gostei!</div>
       <div [hidden]="like">Não gostei gostei!</div>
+  </article>
+</section>
+
+
+
+<section>
+  <article>
+     <h3>Diretiva Estruturada customizadas - ngElse</h3>
+      <div *ngIf="mostra">
+        Lista de cursos aqui!
+      </div>
+      <div *ngElse="mostra">
+        Não existe cursos listados.
+      </div>
+      <br>
+       <a class="btn-floating btn-large waves-effect waves-light green" (click)="onMostrar()">
+        <i class="material-icons">thumb_up</i>
+      </a>
   </article>
 </section>

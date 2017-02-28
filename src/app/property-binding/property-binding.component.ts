@@ -14,6 +14,7 @@ export class PropertyBindingComponent implements OnInit {
   nome = 'Dariano Soares';
   imagem = 'http://lorempixel.com/400/200/sports/';
   like: boolean = false;
+  mostra: boolean = false;
 
   getValor() {
     return 2;
@@ -40,6 +41,10 @@ export class PropertyBindingComponent implements OnInit {
 
   onLike() {
     this.like = !this.like;
+  }
+
+  onMostrar() {
+    this.mostra = !this.mostra;
   }
 }
 
