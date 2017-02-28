@@ -13,6 +13,7 @@ export class PropertyBindingComponent implements OnInit {
 
   nome = 'Dariano Soares';
   imagem = 'http://lorempixel.com/400/200/sports/';
+  like: boolean = false;
 
   getValor() {
     return 2;
@@ -24,10 +25,10 @@ export class PropertyBindingComponent implements OnInit {
 
   onKeyup(event) {
     console.log(event);
-    
+
   }
 
-  onEnter(campo:string){
+  onEnter(campo: string) {
     console.log(campo);
   }
 
@@ -35,6 +36,10 @@ export class PropertyBindingComponent implements OnInit {
 
   onMouseSpan() {
     this.isMouseOver = !this.isMouseOver;
+  }
+
+  onLike() {
+    this.like = !this.like;
   }
 }
 

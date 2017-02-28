@@ -95,8 +95,22 @@
 
 <section>
   <article>
+    <h3>Eventos</h3>
     <p myHighlight>Highlight me!</p>
     <p myHighlight highlightColor="yellow">Highlighted in yellow</p>
     <p myHighlight [highlightColor]="'orange'">Highlighted in orange</p>
+  </article>
+</section>
+
+<section>
+  <article>
+     <h3>Ng Class</h3>
+      <a class="btn-floating btn-large waves-effect waves-light" (click)="onLike()" 
+        [ngClass]="{ red: !like, green: like}">
+        <i class="material-icons">thumb_up</i>
+      </a>
+
+      <div [hidden]="!like">Gostei!</div>
+      <div [hidden]="like">Não gostei gostei!</div>
   </article>
 </section>
